@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
 	<title>Primera página</title>
 </head>
 <body>
-<form action="page1.php" method="post">
-	<input type="text" name="nombre"><br>
-	<input type="text" name="apellido"><br>
-	<input type="text" name="alias"><br>
-	<input type="submit">
-</form>
+
+<!-- Javascript opcional -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.1/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script> 
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+    	<form action="page1.php" method="post">
+		  <div class="form-group">
+		    <label for="InputNombre">Nombre</label>
+		    <input type="text" name="nombre" class="form-control" id="InputNombre">
+		  </div>
+		  <div class="form-group">
+		    <label for="InputApellido">Apellido</label>
+		    <input type="text" name="apellido" class="form-control" id="InputApellido">
+		  </div>
+		  <div class="form-group">
+		    <label for="InputAlias">Alias</label>
+		    <input type="text" name="alias" class="form-control" id="InputAlias">
+		  </div>
+
+		  <button type="submit" class="btn btn-primary btn-block">Submit</button>
+		</form>
+    </div>
+    <div class="col-8"></div>
+  </div>
+</div>
+
+
 </body>
 </html>
